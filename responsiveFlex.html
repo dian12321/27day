@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형에서는 메타네임뷰포트 필수!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: red;
+        }
+
+        .contaner {
+            display: flex;
+            flex-wrap: wrap;
+            /* 여러 행으로 배치 */
+            max-width: 1000px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        /* wide-4단설정 */
+        .contaner .item {
+            background-color: aqua;
+            width: calc(25% - 10px);
+            height: 200px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        /*desktop - 3단설정 */
+        @media (max-width:1280px) {
+            .contaner {
+                width: 95%;
+                /* 95넣는이유 좌우여백때문*/
+            }
+
+            .contaner .item {
+                background-color: pink;
+                width: calc(33.33% - 10px);
+
+            }
+        }
+
+        /*tablet - 2단설정 */
+        @media (max-width:1020px) {
+
+
+
+        .contaner .item {
+            background-color: rgb(77, 4, 16);
+            width: calc(50% - 10px);
+
+        }
+    }
+
+        /*mobile - 1단설정 */
+        @media (max-width:740px) {
+        .contaner .item {
+            background-color: rgb(4, 77, 39);
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .contaner>.item*16{$} -->
+    <div class="contaner">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+    </div>
+</body>
+
+</html>

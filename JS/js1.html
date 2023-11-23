@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 변수-var.variable의 약자
+        // 한번에 한개의 데이터만 저장이 가능
+        // 증강연산자
+        // 변수명이 만들어질 수 있는 조건
+        // ->변수의 맨 앞에는 영문, _, $
+        //변수명 가능한것: 영문,_,$,숫자 가능
+        // 자바스크립트는 첫번째 요소가 무조건 0 
+
+        // 한줄주석
+        /*여러 줄 주석
+         */
+        //★증감연산자 :1씩 증가++ / 1씩 감소 --
+        // document.write: 자바스크립트에서 사용하는 메서드
+        // 객체에 속한 함수가 메서드(무언가를 수행하는 동작)
+        //자동차(객체) - 달리기, 멈춤
+        var DE = 47; // = 넣어줌
+        document.write(DE++ + "<br>");
+        document.write(DE++ + "<br>");
+        document.write(DE++ + "<br>");
+        document.write(DE++ + "<br>");
+        document.write(DE++ + "<br>");
+        document.write(DE++ + "<br>");
+
+        document.write("<br>");
+        document.write(DE++);
+        document.write("<br>");
+        document.write(DE++);
+        document.write("<br>");
+
+        // ★반복문 (=for문) : 초기값,조건식,증감식
+        // DE이 3부터 시작하여 10 이하일때 1씩 증가하여 웹에 출력
+        // <= 작거나 같다는 비교연산자
+        for (var DE = 3; DE <= 10; DE++) {
+            document.write(DE + "<br>");
+        }
+
+        // ★비교연산자 - 2개의 데이터를 비교할때 사용 (잘못되었으면거짓,올바르면 참)
+        // == : 같다 /  !== :다르다  /  > 크다  / < 작다  /  >=크거나 같다
+        var c = 10;
+        var d = 20;
+        document.write((c > d) + "<br>"); // false
+        document.write((c < d) + "<br>"); // true
+        document.write((c == d) + "<br>"); // false
+        document.write((c !== d) + "<br>"); // true
+        // 자바스크립트는 기본 문법 구조가 잇으므로 구조를 이해하는것이 중요
+
+        //★산술연산자 - 더하기+, 빼기-, 곱하기*, 나누기/, 나머지%
+        document.write(1 + 1);
+        document.write("<br>");
+        document.write(8 - 4);
+        document.write("<br>");
+        document.write(6 * 7);
+        document.write("<br>");
+        document.write(12 / 16);
+        document.write("<br>");
+        document.write(10 % 3);
+        document.write("<br>");
+
+
+        document.write('A');
+        document.write("<br>");
+
+
+        // 문자형(string) 데이터 : "", ''에 둘러싸인 데이터 - 문자로 인식
+        // : 텍스트, 태그, 단어, 문장
+        // 숫자형(number) 데이터 : 숫자로 정의되는 데이터(문자형 데이터에서 '', ""를 빼고 그냥 쓰면 됨)
+        //  :수학적 연산이 가능한 숫자를 나타내며, 정수나 소수 등의 문자를 표현
+        // 논리형(boolean) 데이터 : 참인지 거짓인지로 정의되는 데이터
+        //:참, 거짓 값을 가지는 데이터 . 참일때 실행시킴. 조건문에 필요
+        // 널(null)형 데이터 : 비어있음으로 정의되는 데이터
+        //:값이 비어있다는것을 의미,어더한 값도 할당되지 않거나 존재하지 않을때사용
+
+        var time1 = "현재 시간은";
+        var time2 = 1;
+        var time3 = 2;
+        var time4 = "시 입니다";
+        var time5 = time1 + time2 + time3 + time4
+        document.wrigt(time5);
+
+        // ★ 조건문 : if문 / if~else문
+        //참일때만 실행
+        var e = 10;
+        var f = 20;
+        var g = 30;
+
+        if (e < f) {
+            document.write("e가 f보다 크다")
+        } else if (f > g) {
+            document.write("f가 g보다 크다")
+        } else {
+            document.write("?????")
+        }
+
+        //★Array 배열 - 하나의 변수에 여러개 데이터 저장 가능
+        var fruits = ["블루베리", "사과", "바나나"]; // 0,1,2
+        document.write(fruits[2]);
+
+        //★대입연산자 (=대입할당연산자)
+        // +=, -=, *=, /=, %=
+        // 연산된 데이터를 지정된 변수에 대입할때 사용
+        var num1 = 10;
+        var num2 = 20;
+
+        num1 += 5;
+        document.write(num1 + "<br>"); // 15
+        num1 -= 5;
+        document.write(num + "<br>"); // 10
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
